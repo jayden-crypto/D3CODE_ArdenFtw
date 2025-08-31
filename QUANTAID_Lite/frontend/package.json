@@ -1,6 +1,7 @@
 {
   "name": "quantaid-lite-frontend",
   "version": "1.0.0",
+  "homepage": ".",
   "private": true,
   "engines": {
     "node": ">=18.0.0",

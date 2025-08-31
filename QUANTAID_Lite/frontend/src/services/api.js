@@ -1,8 +1,10 @@
 import axios from 'axios';
 
 // Use relative URL for Vercel deployment
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? '/api' 
+// For GitHub Pages, we'll use the deployed backend URL
+// This will need to be updated with your actual backend URL after deployment
+const API_BASE_URL = process.env.NODE_ENV === 'production'
+  ? 'https://quantaid-lite-backend.onrender.com/api'
   : 'http://localhost:8000';
 
 const api = axios.create({

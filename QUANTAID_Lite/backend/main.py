@@ -16,10 +16,15 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS middleware for React frontend
+# CORS middleware for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://jayden-crypto.github.io",
+        "https://*.github.io"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
