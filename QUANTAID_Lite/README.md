@@ -6,6 +6,27 @@ A cutting-edge web application that combines Artificial Intelligence, Quantum Co
 
 Built for the **UST D3CODE 2025 Hackathon** - Theme: "Shaping new frontiers – Data, Intelligence and Quantum."
 
+## 🚀 Quick Deployment with Vercel
+
+Deploy the frontend to Vercel in minutes:
+
+1. **Push your code** to a GitHub/GitLab/Bitbucket repository
+2. **Import the project** to Vercel:
+   - Go to [Vercel](https://vercel.com/new)
+   - Import your repository
+   - Set the root directory to `/frontend`
+   - Add environment variables (copy from `.env.example`)
+   - Click Deploy!
+
+3. **Configure Backend URL**:
+   - In your Vercel project settings, add the environment variable:
+     ```
+     REACT_APP_API_URL=https://your-backend-url.herokuapp.com
+     ```
+   - Replace with your actual backend URL
+
+4. **Deploy!** Vercel will automatically deploy your app and provide a live URL
+
 ## 🚀 Project Vision
 
 QUANTAID Lite addresses one of humanity's most pressing challenges: anticipating and responding to global crises such as food shortages, natural disasters, and resource scarcity. By leveraging the power of AI prediction models, quantum optimization algorithms, and comprehensive data analysis, we create an intelligent system that can:
