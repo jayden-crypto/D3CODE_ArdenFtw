@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(?<path>.+)",
+      "dest": "/api/$path"
+    },
+    {
+      "src": "/",
+      "dest": "/frontend"
+    }
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.9",
+    "NODE_VERSION": "16.x"
+  },
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build"
+}
